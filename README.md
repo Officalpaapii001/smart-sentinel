@@ -1,1 +1,1 @@
-# smart-sentinel
+Initial Smart Sentinel dashboard MVP
