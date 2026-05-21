@@ -289,5 +289,75 @@ body{
     align-items:flex-start;
     gap:20px;
   }
+}
 
+/* DASHBOARD SECTION */
+
+.dashboard-section {
+
+  background: rgba(17,24,39,0.72);
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  backdrop-filter: blur(10px);
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form-group {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+
+  margin-bottom: 8px;
+
+  color: #cbd5e1;
+}
+
+.form-group input,
+.form-group textarea {
+
+  background: #0f172a;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  outline: none;
+}
+
+button {
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-weight: 600;
 }
