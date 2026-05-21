@@ -15,52 +15,129 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-  <!-- TOPBAR -->
-
   <header class="topbar">
 
-    <div class="brand">
-      <h1> /* BRAND */
+  <div class="brand">
 
-.brand {
+    <svg
+      class="sentinel-logo"
+      viewBox="0 0 200 200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
 
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
+      <!-- Shield -->
+      <path
+        d="M100 15
+           L165 40
+           L155 115
+           Q145 165 100 185
+           Q55 165 45 115
+           L35 40
+           Z"
 
-.sentinel-logo {
+        fill="rgba(37,99,235,0.15)"
+        stroke="#3b82f6"
+        stroke-width="4"
+      />
 
-  width: 80px;
-  height: 80px;
+      <!-- Justice Scale -->
+      <line
+        x1="100"
+        y1="55"
+        x2="100"
+        y2="120"
+        stroke="#60a5fa"
+        stroke-width="4"
+      />
 
-  filter:
-    drop-shadow(0 0 12px rgba(59,130,246,0.5));
-}
+      <line
+        x1="70"
+        y1="75"
+        x2="130"
+        y2="75"
+        stroke="#60a5fa"
+        stroke-width="4"
+      />
 
-.brand-text h1 {
+      <!-- Left Scale -->
+      <line
+        x1="78"
+        y1="75"
+        x2="65"
+        y2="100"
+        stroke="#60a5fa"
+        stroke-width="3"
+      />
 
-  font-size: 2rem;
-  font-weight: 700;
+      <circle
+        cx="65"
+        cy="108"
+        r="12"
+        fill="none"
+        stroke="#60a5fa"
+        stroke-width="3"
+      />
 
-  color: white;
-}
+      <!-- Right Scale -->
+      <line
+        x1="122"
+        y1="75"
+        x2="135"
+        y2="100"
+        stroke="#60a5fa"
+        stroke-width="3"
+      />
 
-.brand-text p {
+      <circle
+        cx="135"
+        cy="108"
+        r="12"
+        fill="none"
+        stroke="#60a5fa"
+        stroke-width="3"
+      />
 
-  color: #93c5fd;
+      <!-- WiFi Signal -->
+      <path
+        d="M80 45 Q100 25 120 45"
+        fill="none"
+        stroke="#38bdf8"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
 
-  margin-top: 4px;
+      <path
+        d="M88 52 Q100 40 112 52"
+        fill="none"
+        stroke="#38bdf8"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
 
-  letter-spacing: 1px;
+      <circle
+        cx="100"
+        cy="60"
+        r="4"
+        fill="#38bdf8"
+      />
 
-  font-size: 0.95rem;
-} Smart Sentinel</h1>
-      <p>Real-Time Shelf Intelligence Platform</p>
+    </svg>
+
+    <div class="brand-text">
+      <h1>Smart Sentinel</h1>
+      <p>Transparent Justice Intelligence</p>
     </div>
 
+  </div>
+
+  <div class="topbar-right">
+
+    <div class="live-indicator">
+      <span class="pulse"></span>
+      LIVE
+    </div>
+
+    <div class="
     <div class="topbar-right">
 
       <div class="live-box">
