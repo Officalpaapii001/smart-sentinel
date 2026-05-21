@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Smart Sentinel Dashboard</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+
+  <header class="topbar">
+
+    <div class="brand">
+      <h1>🛰 Smart Sentinel</h1>
+      <p>Real-Time Shelf Intelligence Platform</p>
+    </div>
+
+    <div class="topbar-right">
+
+      <div class="live-box">
+        <span class="pulse"></span>
+        LIVE
+      </div>
+
+      <div class="time" id="liveTime">
+        00:00:00
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- KPI SECTION -->
+
+  <section class="kpi-wrapper">
+
+    <div class="kpi-card">
+      <span>Total Shelves</span>
+      <h2>12</h2>
+    </div>
+
+    <div class="kpi-card">
+      <span>Total Units</span>
+      <h2 id="totalUnits">1480</h2>
+    </div>
+
+    <div class="kpi-card">
+      <span>Critical Alerts</span>
+      <h2 id="criticalAlerts">2</h2>
+    </div>
+
+    <div class="kpi-card">
+      <span>System Uptime</span>
+      <h2>99%</h2>
+    </div>
+
+  </section>
+
+  <!-- MAIN DASHBOARD -->
+
+  <main class="dashboard">
+
+    <!-- LEFT PANEL -->
+
+    <section class="main-panel">
+
+      <div class="section-title">
+        <h2>Shelf Intelligence</h2>
+      </div>
+
+      <div class="grid-cards">
+
+        <div class="card">
+
+          <span class="label">Stock Quantity</span>
+
+          <h3 id="stockQuantity">128</h3>
+
+          <p>Units Available</p>
+
+        </div>
+
+        <div class="card">
+
+          <span class="label">Shelf State</span>
+
+          <h3 id="stockState">Stable</h3>
+
+          <p id="stateDescription">
+            Normal Activity
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <span class="label">Movement Delta</span>
+
+          <h3 id="movementDelta">+4</h3>
+
+          <p>Units Today</p>
+
+        </div>
+
+        <div class="card">
+
+          <span class="label">Consumption Rate</span>
+
+          <h3 id="consumptionRate">12%</h3>
+
+          <p>Daily Usage</p>
+
+        </div>
+
+      </div>
+
+      <!-- AI TIMELINE -->
+
+      <div class="timeline-panel">
+
+        <div class="section-title">
+          <h2>AI Event Timeline</h2>
+        </div>
+
+        <div id="timeline">
+
+          <div class="timeline-event">
+
+            <small>09:14 AM</small>
+
+            Shelf 4 detected stock removal activity.
+
+          </div>
+
+          <div class="timeline-event">
+
+            <small>09:30 AM</small>
+
+            Shelf 2 entered restock condition.
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT SECTION -->
+
+      <div class="contact-panel">
+
+        <div class="section-title">
+          <h2>Contact / Intake</h2>
+        </div>
+
+        <div class="contact-box">
+
+          <input type="text" placeholder="Your Name"/>
+
+          <input type="email" placeholder="Your Email"/>
+
+          <textarea placeholder="Send a message..."></textarea>
+
+          <button>Submit</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RIGHT PANEL -->
+
+    <aside class="side-panel">
+
+      <div class="section-title">
+        <h2>Device Telemetry</h2>
+      </div>
+
+      <div class="telemetry-card">
+        <span>Battery</span>
+        <h3 id="batteryStatus">94%</h3>
+      </div>
+
+      <div class="telemetry-card">
+        <span>Device Health</span>
+        <h3 id="deviceHealth">Healthy</h3>
+      </div>
+
+      <div class="telemetry-card">
+        <span>IoT Status</span>
+        <h3 id="iotStatus">Awake</h3>
+      </div>
+
+      <div class="telemetry-card">
+        <span>Signal Strength</span>
+        <h3 id="signalStrength">Strong</h3>
+      </div>
+
+      <div class="telemetry-card">
+        <span>System Alerts</span>
+        <h3 id="systemAlerts">None</h3>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+
+      <div class="quick-actions">
+
+        <button>Calibrate Sensor</button>
+
+        <button>Generate Report</button>
+
+        <button>Sleep Device</button>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
