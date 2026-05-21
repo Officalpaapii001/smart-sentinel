@@ -185,7 +185,7 @@
 
     <!-- LEFT PANEL -->
 
-    <section class="main-panel">
+    <section class="main-panel dashboard-section">
 
       <div class="section-title">
         <h2>Shelf Intelligence</h2>
@@ -276,25 +276,60 @@
           <h2>Contact / Intake</h2>
         </div>
 
-        <div class="contact-box">
+    <section class="dashboard-section">
 
-          <input type="text" placeholder="Your Name"/>
+  <div class="section-title">
+    <h2>Operational Intake Portal</h2>
+  </div>
 
-          <input type="email" placeholder="Your Email"/>
+  <form
+    class="contact-form"
+    action="https://formsubmit.co/YOUR-EMAIL@gmail.com"
+    method="POST"
+  >
 
-          <textarea placeholder="Send a message..."></textarea>
+    <input type="hidden" name="_captcha" value="false">
 
-          <button>Submit</button>
+    <div class="form-group">
+      <label>Name</label>
 
-        </div>
+      <input
+        type="text"
+        name="name"
+        required
+      >
+    </div>
 
-      </div>
+    <div class="form-group">
+      <label>Email</label>
 
-    </section>
+      <input
+        type="email"
+        name="email"
+        required
+      >
+    </div>
 
+    <div class="form-group">
+      <label>Message</label>
+
+      <textarea
+        name="message"
+        rows="6"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit">
+      Send Intake
+    </button>
+
+  </form>
+
+</section>    
     <!-- RIGHT PANEL -->
 
-    <aside class="side-panel">
+    <aside class="side-panel dashboard-section">
 
       <div class="section-title">
         <h2>Device Telemetry</h2>
